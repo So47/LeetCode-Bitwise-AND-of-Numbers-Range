@@ -8,6 +8,7 @@ class Solution:
         #     i+=1
         # return left << i 
 
+        # iteratively turning off the rightmost set bit in right until it is no longer greater than left
         while left < right:
             right &= (right-1)
         
